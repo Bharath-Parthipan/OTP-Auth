@@ -1,0 +1,371 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #1e90ff, #00c851);
+  /* Gradient background */
+  color: #fff;
+  /* White text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for Centering Content */
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* Header Styles */
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  /* White text */
+}
+
+/* Card Styles (Used for Login, OTP, Resend OTP, and Dashboard) */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  /* Semi-transparent white background */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+}
+
+.card1 {
+  width: 180%;
+  height: 100%;
+  margin-top: 10rem;
+  margin-left: -12rem;
+  background: rgba(255, 255, 255, 0.15);
+  /* Semi-transparent white background */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+}
+
+.data {
+  display: flex;
+  justify-content: end;
+}
+
+.h1data {
+  margin-top: -10rem;
+}
+
+.h2data {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  /* White text */
+  margin-left: -21rem;
+}
+
+.h3data {
+  margin-top: -6rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  /* White text */
+}
+
+/* Input Field Styles */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+  /* Semi-transparent white background */
+  color: #333;
+  /* Dark text */
+  font-size: 1rem;
+}
+
+.input1 {
+  width: 42%;
+  margin-left: -20.5rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+  /* Semi-transparent white background */
+  color: #333;
+  /* Dark text */
+  font-size: 1rem;
+}
+
+.input::placeholder {
+  color: #666;
+  /* Placeholder text color */
+}
+
+/* Button Styles */
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #00c851, #007e33);
+  /* Green gradient */
+  color: #fff;
+  /* White text */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, #007e33, #00c851);
+  /* Darker green gradient on hover */
+}
+
+.btn:disabled {
+  background: #bdc3c7;
+  /* Gray for disabled state */
+  cursor: not-allowed;
+}
+
+.btn1 {
+  width: 20%;
+  margin-left: -20.7rem;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #00c851, #007e33);
+  /* Green gradient */
+  color: #fff;
+  /* White text */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn1:hover {
+  background: linear-gradient(to bottom, #007e33, #00c851);
+  /* Darker green gradient on hover */
+}
+
+.btn1:disabled {
+  background: #bdc3c7;
+  /* Gray for disabled state */
+  cursor: not-allowed;
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ddd;
+  /* Light gray text */
+}
+
+/* Timer and Resend OTP Styles */
+#timer {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #fff;
+  /* White text */
+}
+
+#resend-otp {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #ff6347;
+  /* Red text */
+}
+
+#resend-otp:hover {
+  color: #ff4500;
+  /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .card h2 {
+    font-size: 1.25rem;
+  }
+
+  .input,
+  .btn {
+    font-size: 0.875rem;
+  }
+
+  .input1,
+  .btn1 {
+    font-size: 0.875rem;
+  }
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  /* Semi-transparent white background */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.dashboard-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  /* White text */
+}
+
+.dashboard-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  /* White text */
+}
+
+/* Metrics Section */
+.metrics {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.metric {
+  flex: 1;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent white background */
+  border-radius: 10px;
+  margin: 0 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+}
+
+.metric h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #fff;
+  /* White text */
+}
+
+.metric p {
+  font-size: 1rem;
+  color: #ddd;
+  /* Light gray text */
+}
+
+/* Progress Bars */
+.progress-bar {
+  background: rgba(255, 255, 255, 0.2);
+  /* Semi-transparent white background */
+  border-radius: 5px;
+  height: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress {
+  background: #00c851;
+  /* Green progress bar */
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Orders Table */
+.orders {
+  margin-top: 20px;
+}
+
+.orders h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+  /* White text */
+}
+
+.orders table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders th,
+.orders td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* Semi-transparent white border */
+  color: #fff;
+  /* White text */
+}
+
+.orders th {
+  background: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent white background */
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ddd;
+  /* Light gray text */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .metrics {
+    flex-direction: column;
+  }
+
+  .metric {
+    margin: 10px 0;
+  }
+
+
+
+}
+
+/* Chart Container Styles */
+.chart-container {
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  /* Semi-transparent white background */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+}
+
+.chart-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+  /* White text */
+}
