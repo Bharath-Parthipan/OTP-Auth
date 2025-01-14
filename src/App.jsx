@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="" element={<SIgnIn />} />
+        <Route path="/" element={<SIgnIn />} />
         <Route path="/otp" element={<OTPForm />} />
         <Route path="/resend-otp" element={<ResendOTP />} />
         <Route path="/dashboard" element={<Dashboard />} />
